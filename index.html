@@ -57,19 +57,6 @@
             background: transparent;
             z-index: 1;
         }
-
-        /* Photo Section */
-        .photo-section {
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: calc(-50vw + 50%);
-            background: url('келаман той 232323.jpg') center center/cover no-repeat;
-            overflow: hidden;
-        }
         
         .photo-section::before {
             content: '';
@@ -839,29 +826,6 @@
     </style>
 </head>
 <body>
-    <div id="videoOverlay" style="
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 9999;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-">
-    <video id="introVideo" src="келамантой222.mp4" autoplay muted playsinline style="
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100vw;
-        height: 100vh;
-        transform: translate(-50%, -50%);
-        object-fit: cover;
-    "></video>
-</div>
 
     <audio id="backgroundMusic" loop>
         <source src="M_Dee-Той-жыры-_Kanatbek-Remix_.ogg" type="audio/ogg">
@@ -875,16 +839,9 @@
     <div id="musicControl" class="music-control">
         <span class="heart">♪</span>
     </div>
-
-    <div class="container">
-        <div class="photo-section">
-            <div class="couple-photo-wrapper">
-                <img src="келаман той 232323.jpg" alt="Келаман & Қызғалдақ" class="couple-photo">
-            </div>
-        </div>
         
         <div class="card-section">
-            <h1 class="main-title">КЕЛАМАН & ҚЫЗҒАЛДАҚ</h1>
+            <h1 class="main-title">ГҮЛПАШ 60 ЖАС</h1>
             <div class="elegant-divider"></div>
         </div>
 
@@ -894,12 +851,12 @@
                 
                 <div class="letter-invitation">
                     СІЗДЕРДІ<br><br>
-                    <span class="letter-names">БАЛАЛАРЫМЫЗ<br>Келаман мен<br>Қызғалдақтың</span><br><br>
-                    ҮЙЛЕНУ ТОЙЫНЫҢ<br>ҚАДІРЛІ ҚОНАҒЫ БОЛУҒА<br>ШАҚЫРАМЫЗ!
+                    <span class="letter-names">АНАМЫЗ<br>ГҮЛПАШТЫҢ</span><br><br>
+                    МЕРЕЙТОЙЫНЫҢ<br>ҚАДІРЛІ ҚОНАҒЫ БОЛУҒА<br>ШАҚЫРАМЫЗ!
                 </div>
 
                 <div class="letter-footer">
-                    <strong>ТОЙ ИЕЛЕРІ:<br>Мустафа – Паруза</strong><br><br>
+                    <strong>ТОЙ ИЕСІ:<br>ЕРАСЫЛ</strong><br><br>
                     КЕЛІҢІЗДЕР, ҚУАНЫШЫМЫЗҒА ОРТАҚ БОЛЫҢЫЗДАР!
                 </div>
             </div>
@@ -909,7 +866,7 @@
             <div class="elegant-divider"></div>
             
             <div class="calendar">
-                <div class="month-year" id="monthYear">Желтоқсан 2025</div>
+                <div class="month-year" id="monthYear">Қаңтар 2026</div>
                 <div class="weekdays">
                     <div class="weekday">Дс</div>
                     <div class="weekday">Сс</div>
@@ -924,15 +881,15 @@
 
             <div class="detail-item" style="text-align: center; margin: 40px 0 30px;">
                 <div class="detail-label">Өтетін уақыты:</div>
-                <div class="detail-value time-big">19:00</div>
+                <div class="detail-value time-big">18:00</div>
             </div>
 
             <div class="detail-item" style="text-align: center; margin: 30px 0;">
                 <div class="detail-label">Өтетін орны:</div>
                 <div class="location-info" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
                     <div class="location-icon">📍</div>
-                    <div class="location-text">Бөкейхан ауылы<br>Інжу мейрамханасы</div>
-                    <a class="dgis-link" href="https://2gis.kz/atyrau/geo/70030076475884883" target="_blank" rel="noopener">
+                    <div class="location-text">Астана қаласы<br>Бауыржан Момышұлы даңғылы 24/7<br>Esmeralda мейрамханасы</div>
+                    <a class="dgis-link" href="https://go.2gis.com/BPl1X" target="_blank" rel="noopener">
                         <span class="dgis-dot"></span> 2ГИС картасында ашу
                     </a>
                 </div>
@@ -988,22 +945,11 @@
             </form>
         </div>
     </div>
-    <script>
-    const video = document.getElementById('introVideo');
-    const overlay = document.getElementById('videoOverlay');
-
-    // Видео аяқталғанда оверлейді жасыру
-    video.addEventListener('ended', () => {
-        overlay.style.transition = "opacity 0.8s";
-        overlay.style.opacity = 0;
-        setTimeout(() => overlay.style.display = 'none', 800);
-    });
-</script>
 
     <script>
         // Countdown Timer
         function updateCountdown() {
-            const weddingDate = new Date('2025-12-13T19:00:00');
+            const weddingDate = new Date('2026-01-21T19:00:00');
             const now = new Date();
             const timeDiff = weddingDate - now;
 
@@ -1081,7 +1027,7 @@
 
         // WhatsApp Actions
         const guestName = document.getElementById('guestName');
-        const waPhone = '77789592986';
+        const waPhone = '77757846517';
         
         document.getElementById('waYes').addEventListener('click', function(){
             const name = (guestName?.value || '').trim();
@@ -1148,28 +1094,6 @@
         }
     </script>
     <script>
-    const video = document.getElementById('introVideo');
-    const overlay = document.getElementById('videoOverlay');
-    const container = document.querySelector('.container');
-
-    // Алдымен сайтты жасырын етіп қоямыз
-    container.style.display = 'none';
-
-    // Видео бітсе overlay ішінде бастау батырмасын қосамыз
-    video.addEventListener('ended', () => {
-        const startButton = document.createElement('div');
-        startButton.className = 'start-card';
-        startButton.textContent = 'Келаман & Қызғалдақ бастаңыз';
-        overlay.innerHTML = ''; // Видео алып тастау
-        overlay.appendChild(startButton);
-
-        startButton.addEventListener('click', () => {
-            overlay.style.display = 'none'; // Overlay жасыру
-            container.style.display = 'flex'; // Сайт көрсету
-            document.getElementById('backgroundMusic').play(); // Музыка қосу
-        });
-    });
-
     // Музыка батырмасы
     const musicControl = document.getElementById('musicControl');
     const bgMusic = document.getElementById('backgroundMusic');
